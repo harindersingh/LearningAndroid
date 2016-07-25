@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.imharindersing.happybirthday.MainActivity">
+
+    <ImageView
+        android:src="@drawable/androidparty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/happybirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:text="Happy Birthday Bro" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="36sp"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:text="From Mr Singh"/>
+</RelativeLayout>
