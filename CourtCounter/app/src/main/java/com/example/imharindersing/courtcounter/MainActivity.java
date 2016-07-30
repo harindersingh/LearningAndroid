@@ -47,12 +47,16 @@ public class MainActivity extends AppCompatActivity {
     private void displayForTeamA(int score){
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreForTeamA += score;
+        if(score == 0)
+            scoreForTeamA = 0;
         scoreView.setText(String.valueOf(scoreForTeamA));
     }
 
     private void displayForTeamB(int score){
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreForTeamB += score;
+        if(score == 0)
+            scoreForTeamB = 0;
         scoreView.setText(String.valueOf(scoreForTeamB));
     }
 }
