@@ -25,7 +25,7 @@ public class Word {
         mImageResourceId = ImageResourceId;
         mAudioResourceId = AudioResourceId;
     }
-    
+
     public String getDefaultTranslation(){
         return mDefaultTranslation;
     }
