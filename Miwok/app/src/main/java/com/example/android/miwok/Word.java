@@ -4,21 +4,21 @@ package com.example.android.miwok;
  * Created by im.harinder.sing on 2016-08-30.
  */
 public class Word {
-    private String mDefaultTranslation, mMiwokTranslation;
+    private int mDefaultTranslation, mMiwokTranslation;
 
     private int mImageResourceId = NO_IMAGE_PROVIDED;
     private static final int NO_IMAGE_PROVIDED = -1;
 
     private int mAudioResourceId;
 
-    public Word(String DefaultTranslation, String MiwokTranslation, int AudioResourceId){
+    public Word(int DefaultTranslation, int MiwokTranslation, int AudioResourceId){
         mDefaultTranslation = DefaultTranslation;
         mMiwokTranslation = MiwokTranslation;
         mAudioResourceId = AudioResourceId;
     }
 
 
-    public Word(String DefaultTranslation, String MiwokTranslation, int ImageResourceId,
+    public Word(int DefaultTranslation, int MiwokTranslation, int ImageResourceId,
                 int AudioResourceId){
         mDefaultTranslation = DefaultTranslation;
         mMiwokTranslation = MiwokTranslation;
@@ -26,11 +26,11 @@ public class Word {
         mAudioResourceId = AudioResourceId;
     }
 
-    public String getDefaultTranslation(){
+    public int getDefaultTranslation(){
         return mDefaultTranslation;
     }
 
-    public String getMiwokTranslation(){
+    public int getMiwokTranslation(){
         return mMiwokTranslation;
     }
 
